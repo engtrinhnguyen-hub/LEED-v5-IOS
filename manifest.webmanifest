@@ -1,0 +1,11 @@
+{
+  "name": "LEED GA Beta V5 Trainer",
+  "short_name": "LEED GA Trainer",
+  "description": "LEED GA practice and exam trainer with bilingual explanations.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f766e",
+  "lang": "vi"
+}
