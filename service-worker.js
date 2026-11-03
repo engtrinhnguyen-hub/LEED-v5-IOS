@@ -1,4 +1,4 @@
-const CACHE_NAME = 'leed-ga-cloud-v1';
+const CACHE_NAME = 'leed-ga-cloud-20261103-1';
 const APP_ASSETS = [
   "./assets/css/styles.css",
   "./assets/js/app.js",
@@ -84,6 +84,9 @@ const APP_ASSETS = [
   "./editorial_batches/packets/B47_T12Q026-T12Q050.json",
   "./editorial_batches/packets/B48_T12Q051-T12Q075.json",
   "./editorial_batches/packets/B49_T12Q076-T12Q100.json",
+  "./assets/js/supabase-config.js",
+  "./assets/js/cloud-sync.js",
+  "./SUPABASE_SETUP.sql",
   "./index.html",
   "./manifest.webmanifest"
 ];
@@ -94,7 +97,7 @@ self.addEventListener('activate', event => {
   event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
 self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET') return;
+  if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
   event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
     const copy=response.clone(); caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy)); return response;
   }).catch(() => caches.match('./index.html'))));

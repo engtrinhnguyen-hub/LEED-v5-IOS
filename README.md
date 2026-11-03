@@ -17,7 +17,3 @@ This folder is ready to upload to the root of a GitHub repository and publish wi
 4. Launch from the new Home Screen icon.
 
 Progress and test history are stored locally in the browser on each device. They do not automatically sync across devices. After the first complete online load, the service worker caches the web app for later offline use.
-
-
-## Cloud login / sync
-Xem `HUONG_DAN_SUPABASE.md` và chạy `supabase_setup.sql` trước khi sử dụng.
