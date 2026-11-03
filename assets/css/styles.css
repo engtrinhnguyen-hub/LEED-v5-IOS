@@ -85,3 +85,6 @@
   .question-box>.controls{flex-basis:112px;height:112px;min-height:112px;gap:8px}
   .question-box>.controls .btn{flex:1 1 46%;min-width:0}
 }
+
+/* Supabase account and cloud sync */
+.auth-card{background:#ecfeff;border:1px solid #67e8f9;border-radius:10px;padding:14px;margin:0 0 18px}.auth-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.auth-row input{padding:10px;border:1px solid #94a3b8;border-radius:6px;min-width:220px;flex:1}.cloud-status{margin-top:8px;color:#0f766e;font-size:13px}.cloud-status.bad{color:#b91c1c}.auth-user-email{font-weight:700;color:#0f766e}@media(max-width:560px){.auth-row input,.auth-row .btn{width:100%;min-width:0}}

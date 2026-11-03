@@ -1,4 +1,4 @@
-const CACHE_NAME = "leed-ga-ios-v10-20261102";
+const CACHE_NAME = 'leed-ga-cloud-v1';
 const APP_ASSETS = [
   "./assets/css/styles.css",
   "./assets/js/app.js",
