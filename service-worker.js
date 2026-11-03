@@ -1,4 +1,4 @@
-const CACHE_NAME = 'leed-ga-cloudfix-20261103-2';
+const CACHE_NAME = 'leed-ga-historytime-20261103-1';
 const APP_ASSETS = [
   "./assets/css/styles.css",
   "./assets/js/app.js",
